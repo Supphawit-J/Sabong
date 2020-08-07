@@ -1,16 +1,33 @@
-@layout('layout')
+@layout("layout")
+   @section("style-section")
+   {{style("css/login")}}
+   @endsection
+   
+   @section("content")
 
-@section("style-section")
-{{ style("css/login")}}
-@endsection
-
-
-@section("content")
-    <div class="container">
-        <span class="big-title">
-            REGISTER
-        </span>
-    </div>
-           
+    <div class="container" >
+        <form  method="POST" class="sign-up-form"  action="{{ route('/register')}}">
+            {{ csrfField() }}
+          <h2 class="title">Sign up</h2>
+         <div class="input-field">
+             <input type="text" placeholder="Username" name="username" />
+          </div>
+         
+          <div class="input-field">
+              <input type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="input-field">
+         
+            <input type="password" placeholder="Password" name="password" />
+          </div>
+          
+          <div class="input-field">
+         
+            <input type="password" placeholder="Confrim-Password" />
+          </div>
+          <input type="submit" class="btn" value="Sign up" />
+         
+        </form>
         
-    @endsection
+    </div>
+@endsection

@@ -1,24 +1,37 @@
 'use strict'
 
+const DB = use("Database")
+
 class AuthController {
-login({view,request,response}){
-    const name ="Jeng";
-    const age = 20;
-    const friends = ["Bam","Friend","Fern","x"]
-    const address = { 
-        postcode: "10101",
-        country: "Th",
-    };
-    return view.render("login",{name,age,friends,address});
-  };
+  async login({ view, request, response }) {
+
+    return view.render("login");
+  }
+
+  loginUser({ view, request, response }) {
+
+    const { username, password } = request.body
+    // console.log(profile)
 
 
-  register({view,request,response}){
+    return view.render("login")
+    return response.redirect("/login")
+
+  }
+
+  register({ view, }) {
     return view.render("register")
   };
 
-
-
+   async registerUser({ request, response }) {
+    const { username, email, password }=request.body
+     await DB.table("users").insert({username,email,password})
+    //  await DB.inser({username,email,password}).into("user")ไดเเหมือนกัน
+    return response.redirect("/register")
+  }
 }
+//async= *
+//await=yield
 
-module.exports = AuthController
+
+module.exports = AuthController;
