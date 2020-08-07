@@ -64,7 +64,7 @@ flex: 6;
 
 .footer{
     height: 15%;   
-    background-color: white;
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
     justify-content: flex-between;

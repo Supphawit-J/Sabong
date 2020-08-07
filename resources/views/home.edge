@@ -1,8 +1,8 @@
-@layout('layout')
+@layout('main_layout')
 
 @section("style-section")
-{{ style("css/home")}}
-{{ style("css/slideshow")}}
+
+{{ style("css/home_content")}}
 {{ script('js/slideshow') }}
 @endsection
 
@@ -27,12 +27,11 @@
         </div>
         <div class="content">
             
-            <div class="slideshow" >
+            <div class="mainImg" >
 
-                <div class="imgcaption"><span>
-                    Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s. </span>
+                <div class="imgcaption">
+                    <p>Lorem Ipsum</p><br>
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>   
 
                 </div>
                 
