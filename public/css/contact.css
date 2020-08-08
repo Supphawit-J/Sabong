@@ -2,6 +2,75 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
+}
+
+.contact p{
+    font-size: 30px;
+    text-align: center;
+
+}
+.contact ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact ul li{
+    display: inline-block;
+    margin: 0 50px;
+
+}
+
+.contact ul li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow:0 0 25px gray;
+    transition: all .4s ease-in-out;
+
+}
+.contact ul li a i{
+    font-size: 25px;
+    position:relative;
+    top:17px;
+}
+
+.contact ul li a.facebook{
+    color: #1877f2;
+}
+
+.contact ul li a.linkedin{
+    color: #007bb5;
+}
+
+.contact ul li a.instagram{
+    color: #c32aa3;
+}
+
+.contact ul li a.twitter{
+    color: #1da1f2;
+}
+
+.contact ul li a.facebook:hover{
+    background-color: #1877f2;
+}
+.contact ul li a.linkedin:hover{
+    background-color: #007bb5;
+}
+.contact ul li a.instagram:hover{
+    background-color: #c32aa3;
+}
+.contact ul li a.twitter:hover{
+    background-color: #1da1f2;
+}
+
+.contact ul li a:hover{
+    color: white;
+    border-radius: 10%;
+    transform: rotate(360deg);
+
 }
