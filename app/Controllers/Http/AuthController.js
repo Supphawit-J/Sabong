@@ -27,7 +27,7 @@ class AuthController {
     const { username, email, password }=request.body
      await DB.table("users").insert({username,email,password})
     //  await DB.inser({username,email,password}).into("user")ไดเเหมือนกัน
-    return response.redirect("/register")
+    return response.redirect("/login")
   }
 }
 //async= *
