@@ -77,28 +77,36 @@ flex: 6;
     height: 15%;
     background-color: lightgray;
     display: flex;
-    flex-direction: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    flex: 4;
+    flex: 2;
      
     
 }
-.footcon{
-   
-    justify-content: center;
-    font-size: 0.8vw;
-    color: white;
-    width: auto;
-
-}
 .address{
-    display:flex;
-    flex-direction: column;
+    
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    height: 100%;
+    
+   
+    
+}
+.social{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.box-content{
+    width: auto;
+    padding-left: 5%;
+    padding-right: 2%;
 }
 
 
