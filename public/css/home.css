@@ -8,7 +8,7 @@
 
 .nav{
     background-color: rgb(255, 136, 0);
-    height: 10%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-between;
@@ -67,19 +67,22 @@ flex: 6;
 
 
 .content{
-    height: 75%;
+    height: auto;
+    width: auto;
+    
     
 }
 
 
 
 .footer{
-    height: 15%;   
-    background-color: lightgray;
+    height: auto;   
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+ 
     flex: 2;
      
     
@@ -96,19 +99,48 @@ flex: 6;
     
 }
 .social{
+    
     display: flex;
     flex: 2;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     
 }
 .box-content{
-    width: auto;
-    padding-left: 5%;
-    padding-right: 2%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+
 }
 
-
-
-
+.fa {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10%;
+    width: 20%;
+    
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #1877f2;
+    color: white;
+  }
+  .fa-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #c32aa3;
+    color: white;
+  }
+  .social-name{
+      padding-left: 5%;
+  }

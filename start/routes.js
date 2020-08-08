@@ -40,3 +40,9 @@ Route.get("/contact", (context) => {
     const { view, request, response } = context;
     return view.render("contact")
 });
+
+
+Route.get("/store", (context) => {
+    const { view, request, response } = context;
+    return view.render("store")
+});
