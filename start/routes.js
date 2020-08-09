@@ -47,14 +47,11 @@ Route.get("/store", (context) => {
     return view.render("store")
 });
 
-<<<<<<< HEAD
 
 Route.get("/profile", (context) => {
     const { view, request, response } = context;
     return view.render("profile")
-=======
 Route.get("/cart", (context) => {
     const { view, request, response } = context;
     return view.render("cart")
->>>>>>> 8f9d225464641d98fa72b5fcf99b7f526bcfa775
 });
