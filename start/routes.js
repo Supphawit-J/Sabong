@@ -51,6 +51,7 @@ Route.get("/store", (context) => {
 Route.get("/profile", (context) => {
     const { view, request, response } = context;
     return view.render("profile")});
+   
 Route.get("/cart", (context) => {
     const { view, request, response } = context;
     return view.render("cart")
