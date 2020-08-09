@@ -85,7 +85,7 @@ margin: 50px auto;
     height: 20px;
  }
  .tablecart{
-     height:30vh;
+     height:auto;
      width: 100%;
     
  }
@@ -104,4 +104,16 @@ margin: 50px auto;
     padding-left: 100px;
     padding: 8px 8px 8px 100px;
     font-size: 14px;
+}
+.checkout {
+   height: 20vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+.checkout input{
+    font-size: 15px;
+    
 }
