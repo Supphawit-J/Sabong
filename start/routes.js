@@ -56,3 +56,9 @@ Route.get("/cart", (context) => {
     const { view, request, response } = context;
     return view.render("cart")
 });
+
+   
+Route.get("/checkout", (context) => {
+    const { view, request, response } = context;
+    return view.render("checkout")
+});
