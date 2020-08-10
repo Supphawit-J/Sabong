@@ -130,4 +130,8 @@ margin: 50px auto;
 
 .checkout button:hover{
     background-color: blue;
+}
+.checkout button a{
+    color: white;
+    text-decoration: none;
 } 
