@@ -1,0 +1,16 @@
+.container-checkout{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.checkout{
+    width:500px;
+    height: 600px;
+    background-color: black;
+    
+
+}

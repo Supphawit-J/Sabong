@@ -50,10 +50,15 @@ Route.get("/store", (context) => {
 
 Route.get("/profile", (context) => {
     const { view, request, response } = context;
-    return view.render("profile")
-
-});
+    return view.render("profile")});
+   
 Route.get("/cart", (context) => {
     const { view, request, response } = context;
     return view.render("cart")
+});
+
+   
+Route.get("/checkout", (context) => {
+    const { view, request, response } = context;
+    return view.render("checkout")
 });
