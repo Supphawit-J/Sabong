@@ -13,10 +13,10 @@
     align-items: center;
     flex-direction: row;
     height: 90%;
-    width: 90%;
+    width: 50%;
     box-shadow:0 0 20px darkorange;
-    margin: 2%;
-    border-radius: 100px;
+    margin: 2% 10% 2% 10% ;
+    border-radius: 50px;
    
 }
 
@@ -28,7 +28,7 @@
     width: 50%;
     background-color: rgb(255, 115, 0);
     height: 100%;
-    border-radius: 100px 0px 0px 100px;
+    border-radius: 50px 0px 0px 50px;
     font-size: 2vw;
     color: white;
     
@@ -41,13 +41,6 @@
 }
 
 
-
-
-
-
-
-
-
 .user-data{
     display: flex;
     justify-content: flex-start;
@@ -58,7 +51,7 @@
    
     background-color: white;
     height: 100%;
-    border-radius: 0px 100px 100px 0px;
+    border-radius: 0px 50px 50px 0px;
 }
 
 
