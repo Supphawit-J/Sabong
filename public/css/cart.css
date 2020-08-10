@@ -125,7 +125,7 @@ margin: 50px auto;
     border: none;
     background-color: orangered;
     color: white;
-    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
 }
 
 .checkout button:hover{
