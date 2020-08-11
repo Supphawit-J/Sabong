@@ -70,8 +70,10 @@ let arr;
       renderContact({view}) {
         return view.render("contact",{arr})
       }
-
-
+      renderLayout({view}) {
+        return view.render("main_layout",{arr})
+      }
+      
 
     }
 //async= *
