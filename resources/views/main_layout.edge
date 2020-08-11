@@ -29,8 +29,8 @@
             </div>
             <div class="menu">
                 <a class="button" href="http://127.0.0.1:3333/home" >HOME</a>
-                <a class="button" href="http://127.0.0.1:3333/login" >
-                    <div class="join-button">
+                <a class="button" id="link" href="http://127.0.0.1:3333/login" >
+                    <div  id="join">
                         JOIN
                     </div>
                 </a>
@@ -89,6 +89,15 @@
 
 
     </div>
+
+
+    @if(arr.length!=0)
+        <script>
+            document.getElementById("join").innerHTML = "";
+            let v = document.getElementById("join").className = "fas fa-user-circle";
+            document.getElementById("link").setAttribute("href", "http://127.0.0.1:3333/profile");
+        </script>
+    @endif
 
 
 </body>
