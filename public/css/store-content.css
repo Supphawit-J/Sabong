@@ -21,17 +21,17 @@
 }
 .list{
     display: flex;
-    flex: 4;
+   flex: 4;
     align-items: space-around;
-    justify-content: space-evenly;
-    flex-direction:row;
+    justify-content: flex-start;
+    flex-flow: row wrap;
    
     width: 100%;
     
 }
 .item{
   
-    width: 20vw;
+    width: 15vw;
     height:auto;
     margin: 2vw;
     background-color: rgb(29, 29, 150);
@@ -39,7 +39,7 @@
     justify-content:flex-end;
     align-items: center;
     flex-direction:column;
-    box-shadow:0 0 25px gray;
+    border: 5px solid rgb(29, 29, 150);
     
 }
 .item img {
@@ -163,13 +163,15 @@
   /* The Close Button */
   .close {
     color: #aaaaaa;
-    float: right;
+    float: left;
+    text-align: end;
     font-size: 28px;
     font-weight: bold;
-    display: flex;
+    position: absolute;
     height: 100%;
-    align-items: flex-start;
-    width: 5%;
+    margin-left: 67%;
+    margin-top: 10%;
+    width: auto;
   }
 
 .close:hover,
