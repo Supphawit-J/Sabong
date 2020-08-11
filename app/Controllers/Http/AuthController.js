@@ -1,23 +1,25 @@
 'use strict'
 
 const DB = use("Database")
+let arr;
 
 class AuthController {
   async login({ view, request, response }) {
+     return view.render("login");
+   }
 
-    return view.render("login");
-  }
+  async loginUser({ view, request, response }) {
 
-  loginUser({ view, request, response }) {
-
-    const { username, password } = request.body
+    const userlogin = { username, password } = request.body
     // console.log(profile)
-
+    const users = await DB.select("*").from("user").
+    where(userlogin);
+    arr == users;
 
     return view.render("login")
     return response.redirect("/login")
-
   }
+
 
   register({ view, }) {
     return view.render("register")

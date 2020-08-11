@@ -1,0 +1,39 @@
+.admin-container{
+    width: 100%;
+    height: auto;
+   
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid orangered;
+    border-radius: 50px;
+    width: 30%;
+    height: auto;
+    margin: 1%;
+    
+
+}
+.add-button{
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 2%;
+    border: none;
+    color: white;
+    margin-bottom: 2%;
+    cursor: pointer;
+    width: 100px;
+}
+.add-form input{
+    border-radius: 5px;
+    border: 1.5px solid orangered;
+    padding: 1%;
+}
