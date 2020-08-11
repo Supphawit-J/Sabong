@@ -19,6 +19,21 @@ input {
   overflow: hidden;
 }
 
+.container a .back{
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  margin-top: 5%;
+ 
+}
+.container a.back .bback{
+  width: 30px;
+  height: 30px;
+  z-index: 7;
+  position: absolute;
+  margin: 20px 20px 20px 20px;
+}
+
 .forms-container {
   position: absolute;
   width: 100%;
@@ -26,6 +41,7 @@ input {
   top: 0;
   left: 0;
 }
+
 
 .signin-signup {
   position: absolute;
@@ -174,6 +190,7 @@ form.sign-in-form {
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
+  
 }
 
 .image {
@@ -270,6 +287,23 @@ form.sign-in-form {
 
 .container.sign-up-mode .right-panel {
   pointer-events: all;
+}
+.boxback{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  
+}
+.back{
+  width: 20px;
+  height: 20px;
+ }
+
+.back img {
+  z-index: 7;
+  
 }
 
 /* @media (max-width: 870px) {
