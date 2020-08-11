@@ -31,6 +31,10 @@ Route.post("/register", "AuthController.registerUser");
 
 Route.post("/api/register", "AuthController.registerUser");
 
+
+
+
+
 Route.get("/home", (context) => {
     const { view, request, response } = context;
     return view.render("home")
@@ -61,4 +65,11 @@ Route.get("/cart", (context) => {
 Route.get("/checkout", (context) => {
     const { view, request, response } = context;
     return view.render("checkout")
+});
+
+
+   
+Route.get("/admin", (context) => {
+    const { view, request, response } = context;
+    return view.render("admin")
 });
