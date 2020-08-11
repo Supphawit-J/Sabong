@@ -22,7 +22,6 @@ Route.on('/').render('welcome')
 // Route.on('/login').render("login")
 
 Route.get("/login", "AuthController.login");//ย้านไปอยู่ใน AuthController และเรียกใช้มัน
-
 Route.post("/login", "AuthController.loginUser");
 
 
@@ -35,41 +34,16 @@ Route.post("/api/register", "AuthController.registerUser");
 
 
 
-Route.get("/home", (context) => {
-    const { view, request, response } = context;
-    return view.render("home")
-});
+Route.get("/home", "AuthController.renderHome");
 
-Route.get("/contact", (context) => {
-    const { view, request, response } = context;
-    return view.render("contact")
-});
+Route.get("/contact","AuthController.renderContact");
 
+Route.get("/store", "AuthController.renderStore");
 
-Route.get("/store", (context) => {
-    const { view, request, response } = context;
-    return view.render("store")
-});
+Route.get("/profile","AuthController.renderProfile") ;
 
+Route.get("/cart","AuthController.renderCart");
 
-Route.get("/profile", (context) => {
-    const { view, request, response } = context;
-    return view.render("profile")});
-   
-Route.get("/cart", (context) => {
-    const { view, request, response } = context;
-    return view.render("cart")
-});
+Route.get("/checkout","AuthController.renderCheckout");
 
-   
-Route.get("/checkout", (context) => {
-    const { view, request, response } = context;
-    return view.render("checkout")
-});
-
-
-   
-Route.get("/admin", (context) => {
-    const { view, request, response } = context;
-    return view.render("admin")
-});
+Route.get("/admin","AuthController.renderAdmin");
