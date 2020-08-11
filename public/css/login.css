@@ -32,6 +32,7 @@ input {
   z-index: 7;
   position: absolute;
   margin: 20px 20px 20px 20px;
+  right: 0px;
 }
 
 .forms-container {

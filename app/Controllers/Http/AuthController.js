@@ -16,6 +16,11 @@ class AuthController {
     where(userlogin);
     arr == users;
 
+    if (arr.lenght==0){
+      
+    }
+
+
     return view.render("login")
     return response.redirect("/login")
   }
