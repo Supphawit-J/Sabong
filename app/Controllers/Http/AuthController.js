@@ -2,8 +2,14 @@
 
 const DB = use("Database")
 let arr;
+let pro;
 
     class AuthController {
+
+    
+
+
+
       async login({ view, request, response }) {
         return view.render("login");
       }
@@ -48,10 +54,22 @@ let arr;
         return view.render("home", { arr })
       }
       
-      renderStore({ view }) {
+      async renderStore({ view }) {
         
-        return view.render("store", { arr })
+        const productList = await DB.select("*").from("products");
+        pro = productList;
+
+        if(pro.lenght!=0){
+          return view.render("store", { arr, pro })
+        }else{
+          return view.render("home",{arr})
+        }
+
+        return view.render("store", { arr },{pro})
       }
+
+
+
 
       renderProfile({view}) {
         return view.render("profile",{arr})

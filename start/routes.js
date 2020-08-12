@@ -31,10 +31,6 @@ Route.post("/register", "AuthController.registerUser");
 
 Route.post("/api/register", "AuthController.registerUser");
 
-
-
-
-
 Route.get("/home", "AuthController.renderHome");
 
 Route.get("/contact","AuthController.renderContact");
@@ -48,14 +44,8 @@ Route.get("/cart","AuthController.renderCart");
 Route.get("/checkout","AuthController.renderCheckout");
 
 
-
-
-
 Route.post("/admin","AuthController.renderAdmin");
 Route.get("/admin","AuthController.Admin");
-
-
-
 
 
 Route.get("/main_layout","AuthController.renderLayout");

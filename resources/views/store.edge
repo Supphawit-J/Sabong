@@ -12,10 +12,17 @@
                 <div class="store-content">
                    <h1>STORE</h1> 
                    <div class="list">
+
+                                
+                        @each(i in pro)
+
+                                
+
+
                                 <div class="item" id="myBtn">
                                    <img src="img/available.jpg" alt="">
-                                   <p>Bearbrick</p>
-                                   <p>1990 Baht</p>
+                                        <p>{{i.nameproduct}}</p>
+                                   <p>{{i.price}} Baht</p>
                                 </div>
 
                                 <div id="myModal" class="modal">
@@ -27,21 +34,17 @@
                                                            <div class="product-content">
                                                               <div class="box">
                                                                 <div class="box1">
-                                                                        <strong>Bearbrick</strong><br>
-                                                                        <strong>Price: 1990 Baht</strong><br>
-                                                                        <input type="number" id="quantity" name="quantity" style="width: 50%;" placeholder="1" min="1">
-                                                                        <br><strong>Total:</strong><br>
+                                                                        <strong>{{i.nameproduct}}</strong><br>
+                                                                        <strong>Price : {{i.price}}</strong><br>
+                                                                        <input type="number" id="quantity" name="quantity" 
+                                                                        style="width: 50%;" placeholder="1" min="1" >
+                                                                        <br><strong>Total: </strong><br>
                                                                         
                                                                         <button>Add to cart</button>         
                                                                 </div>    
                                                                 <div class="box2">
                                                                    <h3>Detail</h3>
-                                                                   <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                                                      sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                                                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                                                       aute irure dolor in reprehenderit in voluptate velit esse
-                                                                        cillum dolore eu fugiat nulla pariatur. </span>  
+                                                                   <span class="text">{{i.detail}}</span>  
                                                                 </div>  
                                                               </div>                                                         
                                                            
@@ -54,27 +57,10 @@
                                 </div>
 
 
+                        @endeach
 
-                                <div class="item"><img src="img/k.jpg" alt="">
-                                        <p>bearbrick</p>
-                                        <p>1990 baht</p>
-                                </div>
-                                <div class="item"><img src="img/k.jpg" alt="">
-                                        <p>bearbrick</p>
-                                        <p>1990 baht</p>
-                                </div>
-                                <div class="item"><img src="img/k.jpg" alt="">
-                                        <p>bearbrick</p>
-                                        <p>1990 baht</p>
-                                </div>
-                                <div class="item"><img src="img/k.jpg" alt="">
-                                        <p>bearbrick</p>
-                                        <p>1990 baht</p>
-                                </div>
-                                <div class="item"><img src="img/k.jpg" alt="">
-                                        <p>bearbrick</p>
-                                        <p>1990 baht</p>
-                                </div>
+
+
                    </div>                 
                         
                 </div>
