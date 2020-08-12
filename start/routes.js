@@ -47,6 +47,15 @@ Route.get("/cart","AuthController.renderCart");
 
 Route.get("/checkout","AuthController.renderCheckout");
 
-Route.get("/admin","AuthController.renderAdmin");
+
+
+
+
+Route.post("/admin","AuthController.renderAdmin");
+Route.get("/admin","AuthController.Admin");
+
+
+
+
 
 Route.get("/main_layout","AuthController.renderLayout");

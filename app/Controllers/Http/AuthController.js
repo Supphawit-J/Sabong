@@ -40,6 +40,10 @@ let arr;
         return response.redirect("/login")
       }
 
+
+
+
+      
       renderHome({ view }) {
         return view.render("home", { arr })
       }
@@ -62,11 +66,22 @@ let arr;
         return view.render("checkout",{arr})
       }
 
+
+
+
+
        async renderAdmin({view,request,response}) {
         const {nameproduct ,price,quantity}=request.body
         await DB.table("products").insert({nameproduct,price,quantity}) 
-        return view.render("admin",{arr})
+        return view.render("/admin",{arr})
       }
+      Admin({ view}) {
+        return view.render("admin");
+      }
+
+
+
+
       renderContact({view}) {
         return view.render("contact",{arr})
       }
