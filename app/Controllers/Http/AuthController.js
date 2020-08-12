@@ -53,7 +53,6 @@ let arr;
         return view.render("store", { arr })
       }
 
-      
       renderProfile({view}) {
         return view.render("profile",{arr})
       }
@@ -85,10 +84,11 @@ let arr;
       renderContact({view}) {
         return view.render("contact",{arr})
       }
+
       renderLayout({view}) {
         return view.render("main_layout",{arr})
       }
-      
+
 
     }
 //async= *
