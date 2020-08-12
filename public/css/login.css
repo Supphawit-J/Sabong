@@ -70,11 +70,11 @@ form {
 
 form.sign-up-form {
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 form.sign-in-form {
-  z-index: 2;
+  z-index: 1;
 }
 
 .title {
@@ -183,7 +183,7 @@ form.sign-in-form {
   position: absolute;
   height: 2000px;
   width: 2000px;
-  top: -10%;
+  top: -20%;
   right: 48%;
   transform: translateY(-50%);
   background-image: linear-gradient(-45deg,rgb(255, 136, 0)
