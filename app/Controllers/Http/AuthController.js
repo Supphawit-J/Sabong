@@ -66,7 +66,9 @@ let arr;
         return view.render("checkout",{arr})
       }
 
-      renderAdmin({view}) {
+       async renderAdmin({view,request,response}) {
+        const {nameproduct ,price,quantity}=request.body
+        await DB.table("products").insert({nameproduct,price,quantity}) 
         return view.render("admin",{arr})
       }
 
