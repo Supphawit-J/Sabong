@@ -3,6 +3,7 @@
 const DB = use("Database")
 let arr;
 let pro;
+let bag =[,,,];
 
     class AuthController {
 
@@ -60,13 +61,27 @@ let pro;
         pro = productList;
 
         if(pro.lenght!=0){
-          return view.render("store", { arr, pro })
+          return view.render("store", { arr, pro ,bag })
         }else{
           return view.render("home",{arr})
         }
 
-        return view.render("store", { arr },{pro})
+        return view.render("store", { arr ,pro})
       }
+
+
+
+      async ajaxStore({ request, response }) {
+          const {test} = request.body;
+          console.log("test");
+
+
+        return response.redirect("/cart",{test});
+      }
+
+
+
+
 
 
 
@@ -76,7 +91,8 @@ let pro;
       }
 
       renderCart({view}) {
-        return view.render("cart",{arr})
+        
+        return view.render("cart",{arr,bag})
       }
 
       renderCheckout({view}) {

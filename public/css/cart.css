@@ -97,17 +97,21 @@ margin: 50px auto;
 }
 
 .tbody .table th{
-   
+    width: auto;
     vertical-align: top;
-    padding: 8px 180px 8px 8px;
+    padding: 8px 100px 8px 8px;
     font-size: 14px;
     text-align: left
 }
 .tbody .table td{
     padding-left: 100px;
-    padding: 8px 8px 8px 100px;
+    padding: 8px 8px 8px 50px;
     font-size: 14px;
+    
 }
+
+
+
 .checkout {
    height: 20vh;
    width: 100%;

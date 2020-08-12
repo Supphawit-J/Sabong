@@ -13,13 +13,13 @@
                      <div class="box-m">
                         <div class="box-s">
                             <div class="box-sx1">
-                                <img class="img" src="img/available.jpg">
+                                <img class="img" src="img/k.jpg">
                             </div>
                             <div class="box-sx2">
-                                <strong>bearbrick </strong><br>
-                                <strong>price :</strong><br>
-                                <strong>Quantity :</strong><br>
-                                <strong>Total :</strong><br>
+                                <strong>Name : <div style="display:inline;"></div></strong><br>
+                                <strong>Price : <div style="display:inline;"></div> Baht</strong><br>
+                                <strong>Quantity : <div style="display:inline;"></div>  Piece</strong><br>
+                                <strong>Total : <div style="display:inline;"></div> Baht</strong><br>
                             
                             </div>
                             <div class="close">
@@ -27,21 +27,7 @@
                             </div>
                         </div>
                        
-                        <div class="box-s">
-                            <div class="box-sx1">
-                                <img class="img" src="img/available.jpg">
-                            </div>
-                            <div class="box-sx2">
-                                <strong>bearbrick </strong><br>
-                                <strong>price :</strong><br>
-                                <strong>Quantity :</strong><br>
-                                <strong>Total :</strong><br>
-                            
-                            </div>
-                            <div class="close">
-                                <img src="img/close.png">
-                            </div>
-                        </div>
+                        
                        
                      </div>
 
@@ -49,16 +35,20 @@
                         <div class="tbody">
                             <table class="table">
                                 <tr>
-                                <th><strong>Total</strong></th>
-                                <td><strong>baht</strong></td>
+                                <th><strong>Total:</strong></th>
+                                
+                                <td> <div style="display:inline;">{{bag[3]}}</div></td>
+                                <td><strong>Baht</strong></td>
                                 </tr>
                                 <tr>
-                                <th><strong>Shipping</strong></th>
-                                <td><strong>baht</strong></td>
+                                <th><strong>Shipping:  </strong></th>
+                                <td>0</td>
+                                <td><strong> Baht</strong></>
                                 </tr>
                                 <tr>
-                                <th><strong>Total</strong></th>
-                                <td><strong>baht</strong></td>
+                                <th><strong>Total:</strong></th>
+                                <td> <div style="display:inline;">{{bag[3]}}</div></td>
+                                <td><strong>Baht</strong></td>
                                 </tr>
                             </table>
                         </div>
@@ -66,9 +56,20 @@
                      <div class="checkout">
                        <button><a href="http://127.0.0.1:3333/checkout">CHECK OUT</a></button>
                      </div>
+                     <button onclick="s()"></button>
            </div>  
        </div>
-     
+   
     </div>
+
+
+    <script>
+
+        function s(){
+            alert(test);
+        }
+
+
+    </script>
 
 @endsection

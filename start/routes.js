@@ -39,7 +39,12 @@ Route.get("/store", "AuthController.renderStore");
 
 Route.get("/profile","AuthController.renderProfile") ;
 
+
 Route.get("/cart","AuthController.renderCart");
+Route.post("/cart","AuthController.ajaxStore");
+
+
+
 
 Route.get("/checkout","AuthController.renderCheckout");
 
