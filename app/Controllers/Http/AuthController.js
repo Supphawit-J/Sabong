@@ -88,8 +88,8 @@ let pro;
 
 
        async renderAdmin({view,request,response}) {
-        const {nameproduct ,price,quantity}=request.body
-        await DB.table("products").insert({nameproduct,price,quantity}) 
+        const {nameproduct ,price,quantity,detail}=request.body
+        await DB.table("products").insert({nameproduct,price,quantity,detail}) 
         return view.render("/admin",{arr})
       }
       Admin({ view}) {
