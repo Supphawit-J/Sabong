@@ -37,3 +37,8 @@
     border: 1.5px solid orangered;
     padding: 1%;
 }
+.add-form textarea{
+    border-radius: 5px;
+    border: 1.5px solid orangered;
+    padding: 1%;
+}

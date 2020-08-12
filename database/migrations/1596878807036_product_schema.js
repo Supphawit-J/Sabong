@@ -11,7 +11,7 @@ class ProductSchema extends Schema {
       table.string('type',60)
       table.integer('quantity', 120).notNullable()
       table.integer('price', 10).notNullable()
-      table.string('detail',60)
+      table.string('detail',200)
       table.string('code',60)
       table.string('nameproduct',60).notNullable()
 
