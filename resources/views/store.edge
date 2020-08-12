@@ -34,11 +34,16 @@
                                                            <div class="product-content">
                                                               <div class="box">
                                                                 <div class="box1">
+
                                                                         <strong>{{i.nameproduct}}</strong><br>
-                                                                        <strong>Price : {{i.price}}</strong><br>
+
+
+                                                                        <strong>Price : <div id="price" >{{i.price}}</div> Baht</strong>
+                                                                        <br>
                                                                         <input type="number" id="quantity" name="quantity" 
-                                                                        style="width: 50%;" placeholder="1" min="1" >
-                                                                        <br><strong>Total: </strong><br>
+                                                                        style="width: 50%;" value="1" onchange="myFunction()" placeholder="1" min="1" >
+                                                                        <br>
+                                                                        <strong >Total: <div id="total"></div> Baht </strong><br>
                                                                         
                                                                         <button>Add to cart</button>         
                                                                 </div>    
@@ -94,6 +99,16 @@
             modal.style.display = "none";
           }
         }
+
+        function myFunction() {
+                let getPrice = document.getElementById("price").innerHTML;
+                let getQuantity = document.getElementById("quantity").value;
+                let format = parseFloat(getPrice)
+                document.getElementById("total").innerHTML = format*getQuantity ;
+        }
+
+
+
         </script>
            
 @endsection     
