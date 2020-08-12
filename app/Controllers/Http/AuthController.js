@@ -40,6 +40,11 @@ let arr;
         return response.redirect("/login")
       }
 
+      
+
+
+
+
       renderHome({ view }) {
         return view.render("home", { arr })
       }
@@ -49,7 +54,6 @@ let arr;
         return view.render("store", { arr })
       }
 
-      
       renderProfile({view}) {
         return view.render("profile",{arr})
       }
@@ -65,13 +69,15 @@ let arr;
       renderAdmin({view}) {
         return view.render("admin",{arr})
       }
+
       renderContact({view}) {
         return view.render("contact",{arr})
       }
+
       renderLayout({view}) {
         return view.render("main_layout",{arr})
       }
-      
+
 
     }
 //async= *
