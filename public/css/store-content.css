@@ -112,7 +112,7 @@
     align-items: flex-start;
     color: black;
     flex-direction: column;
-    margin: 3% 3% 3% 3% ;
+    margin: 4%;
     
 
   }
@@ -152,6 +152,7 @@
         color: white;
         border-top: 4%;
         cursor: pointer;
+        
   }
   .product-content button:hover{
 
