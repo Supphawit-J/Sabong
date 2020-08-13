@@ -4,17 +4,14 @@
         
         width:100%;
         
-        
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-image: url("../img/mainimg.jpg") ;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
-        padding-top: 6%;
-        padding-bottom: 6%;
+        height:75vh;
+        background-size: cover;
+        
         flex-direction: row;
         /* background-color: aqua; */
         

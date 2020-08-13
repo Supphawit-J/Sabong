@@ -1,19 +1,15 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-}
+
 
 .contact {
-    padding: 25vh;
+
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    height: 75vh;
     background-image: url("../img/eiei.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .contact .box{
     width: 700px;
