@@ -3,7 +3,7 @@
 const DB = use("Database")
 let arr;
 let pro;
-let bag =[,,,];
+let bag;
 
     class AuthController {
 
@@ -71,12 +71,19 @@ let bag =[,,,];
 
 
 
-      async ajaxStore({ request, response }) {
-          const {test} = request.body;
-          console.log("test");
-
-
-        return response.redirect("/cart",{test});
+      async ajaxStore({  view,request, response }) {
+        const {name,price,quantity,totalPrice} = request.body
+    
+        bag=[name,price,quantity,totalPrice]
+        console.log(bag);
+        
+        return view.render("cart",{arr,pro,bag})
+      }
+      
+      renderCart({view}) {
+        
+        
+        return view.render("cart",{arr,bag,bag})
       }
 
 
@@ -90,10 +97,8 @@ let bag =[,,,];
         return view.render("profile",{arr})
       }
 
-      renderCart({view}) {
-        
-        return view.render("cart",{arr,bag})
-      }
+
+      
 
       renderCheckout({view}) {
         return view.render("checkout",{arr})

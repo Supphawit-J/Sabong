@@ -16,10 +16,10 @@
                                 <img class="img" src="img/k.jpg">
                             </div>
                             <div class="box-sx2">
-                                <strong>Name : <div style="display:inline;"></div></strong><br>
-                                <strong>Price : <div style="display:inline;"></div> Baht</strong><br>
-                                <strong>Quantity : <div style="display:inline;"></div>  Piece</strong><br>
-                                <strong>Total : <div style="display:inline;"></div> Baht</strong><br>
+                            <strong>Name : <div style="display:inline;">{{bag[0]}}</div></strong><br>
+                                <strong>Price : <div style="display:inline;">{{bag[1]}}</div> Baht</strong><br>
+                                <strong>Quantity : <div style="display:inline;">{{bag[2]}}</div>  Piece</strong><br>
+                                <strong>Total : <div style="display:inline;">{{bag[3]}}</div> Baht</strong><br>
                             
                             </div>
                             <div class="close">
@@ -37,7 +37,7 @@
                                 <tr>
                                 <th><strong>Total:</strong></th>
                                 
-                                <td> <div style="display:inline;">{{bag[3]}}</div></td>
+                                <td> <div style="display:inline;">{{bag[1]}}</div></td>
                                 <td><strong>Baht</strong></td>
                                 </tr>
                                 <tr>
@@ -53,10 +53,19 @@
                             </table>
                         </div>
                      </div>
+                     
+                     
                      <div class="checkout">
                        <button><a href="http://127.0.0.1:3333/checkout">CHECK OUT</a></button>
                      </div>
                      <button onclick="s()"></button>
+                    
+                    
+                    
+
+
+
+
            </div>  
        </div>
    
@@ -65,9 +74,7 @@
 
     <script>
 
-        function s(){
-            alert(test);
-        }
+        
 
 
     </script>

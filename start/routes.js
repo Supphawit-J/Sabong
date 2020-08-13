@@ -41,7 +41,7 @@ Route.get("/profile","AuthController.renderProfile") ;
 
 
 Route.get("/cart","AuthController.renderCart");
-Route.post("/cart","AuthController.ajaxStore");
+Route.post("/api/cart","AuthController.ajaxStore");
 
 
 

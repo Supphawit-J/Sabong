@@ -22,7 +22,7 @@
                                    <p>{{i.price}} Baht</p>
                                 </div>
 
-                                <div id="myModal" class="modal" onload="myFunction()">
+                                <div id="myModal" class="modal" >
                                         <div  class="modal-container">
                                             <div  class="modal-content">
                                                            <div class="product-img">
@@ -42,7 +42,7 @@
                                                                         <br>
                                                                         <strong >Total: <div id="total" style="display:inline"></div> Baht </strong><br>
                                                                         
-                                                                        <button onclick="test()">Add to cart</button>         
+                                                                        <button onclick="addCart()">Add to cart</button>         
                                                                 </div>    
                                                                 <div class="box2">
                                                                    <h3>Detail</h3>
@@ -72,7 +72,8 @@
 
 
                 </div>
-                <button onclick="addCart()"></button>
+               
+               
             </div>
 
             
@@ -113,22 +114,27 @@
                  getPrice = document.getElementById("price").innerHTML;
                  getQuantity = document.getElementById("quantity").value;
                  format = parseFloat(getPrice);
-                  cal=format*getQuantity;
-                getName=document.getElementById("pname").innerHTML;
-                document.getElementById("total").innerHTML = cal ;
+                 cal=format*getQuantity;
+                 getName=document.getElementById("pname").innerHTML;
+                 document.getElementById("total").innerHTML = cal ;
         }
         async function addCart(){
-          let x = 1000;
+          
           const form =new FormData();
-          form.append("test",1000);
-          alert(x);
-          console.log("xxxx");
-          await fetch("/cart",{method:"POST" ,body:form});
+          
+          
+          form.append("name",getName);
+          form.append("price",getPrice);
+          form.append("quantity",getQuantity);
+          form.append("totalPrice",cal);
 
+          
+          await fetch("/api/cart",{method:"POST" ,body:form});
+          
           
         }
         
-
+                window.onload = myFunction();
 
         </script>
            
