@@ -23,10 +23,10 @@ let bag;
         where({ username: username, password: password });
         arr = users;
 
-        if (arr.lenght==0){
-          return view.render("login")
-        }else{
+        if (users.lenght){
           return view.render("home",{arr})
+        }else{
+          return view.render("login")
           return response.redirect("/home")
         }
 
